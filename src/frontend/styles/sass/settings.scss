@@ -1,0 +1,111 @@
+/************************************
+  
+  
+  DEFINIÇÕES DE FONTES, CORES E OUTRAS VARIÁVEIS
+  
+  
+  ************************************/
+
+/************************************
+  BOOTSTRAP
+  ************************************/
+@import "../../../../bower_components/bootstrap/scss/bootstrap.scss";
+
+/************************************
+  ANGULARJS-TABLE
+  ************************************/
+
+
+/************************************
+  HANDSONTABLE
+  ************************************/
+
+
+/************************************
+  FONTES
+  ************************************/
+@import "../../../../dist/fonts/FontAwesome/scss/brands.scss";
+@import "../../../../dist/fonts/FontAwesome/scss/solid.scss";
+@import "../../../../dist/fonts/FontAwesome/scss/regular.scss";
+@import "../../../../dist/fonts/FontAwesome/scss/fontawesome.scss";
+
+/************************************
+  COLORS
+  ************************************/
+$facebook-color: #3b5994;
+$google-color: #d34836;
+
+
+/************************************
+  HTML COMPONENTS SETTINGS
+  ************************************/
+ul {
+  list-style: none;
+}
+li {
+  list-style-type: none;
+}
+
+
+.btn:not(.btn-default) {
+  border-radius: 21px;
+  text-align: center;
+  border: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+}
+
+.btn-default {
+  background-color: $secondary;
+  margin: 0.5rem;
+  color: white;
+  &.active {
+    background-color: $primary;
+  }
+}
+
+.btn-cta-facebook {
+  background-color: #3b5998;
+}
+
+.btn-cta-orange {
+  background-image: linear-gradient(to right, #ffbb00, #ff8b00);
+}
+
+.btn-cta-blue {
+  background-image: linear-gradient(to right, #038ba1, #006c7e);
+}
+
+.btn-cta-white {
+  background-color: white;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #d5d5d5;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem #eeeeee;
+}
+//  SCROLLBOX
+::-webkit-scrollbar-track {
+  background-color: #f4f4f4;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  background: #f4f4f4;
+}
+::-webkit-scrollbar-thumb {
+  background: #ff8b00;
+}
+
+//  SCROLLBOX
+body {
+  scrollbar-base-color: #c0c0c0;
+  scrollbar-base-color: #c0c0c0;
+  scrollbar-3dlight-color: #c0c0c0;
+  scrollbar-highlight-color: #c0c0c0;
+  scrollbar-track-color: #ebebeb;
+  scrollbar-arrow-color: black;
+  scrollbar-shadow-color: #c0c0c0;
+}

@@ -1,0 +1,12 @@
+@import "./settings.scss";
+@import "./helpers.scss";
+
+
+
+// HEADER
+.collapse-100-percent-from-left{
+    width: 50%;
+    position: absolute;
+    height: 100%;
+    z-index: 1;
+}

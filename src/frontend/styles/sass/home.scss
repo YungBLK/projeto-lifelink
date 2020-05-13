@@ -1,0 +1,32 @@
+@import "./style.scss";
+
+.collapsed{
+    top: 0;
+    left: 0;
+}
+.fade-slow{
+    transition-duration: 6s !important;
+    transition: ease !important;
+    transition-delay: 0.5s !important;
+}
+.areaClose{
+    position: absolute;
+    top: 1vh;
+    left: 8px;
+    font-size: 22px;
+    color: white;
+    z-index: 2;
+}
+
+.imgLogo{
+    width: 5%;
+}
+.flip-card{
+    width: 245px;
+    height: 350px;
+}
+.bg-2{
+    background-image: url("/images/bg-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}

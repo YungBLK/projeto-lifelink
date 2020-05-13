@@ -1,0 +1,178 @@
+/************************************
+  CLASSES AUXILIARES
+************************************/
+.h-100{
+  height: 100% ;
+}
+.p-absolute{
+  position: absolute;
+}
+.z-index-1{
+  z-index: 1;
+}
+/************************************
+   NGCLOAK
+ ************************************/
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+  display: none !important;
+}
+
+/************************************
+   ESCALA DE FONTES
+ ************************************/
+._tsmin {
+  font-size: 0.5rem;
+}
+._ts0 {
+  font-size: 0.69444rem;
+}
+
+._ts1 {
+  font-size: 0.83333rem;
+}
+._ts2 {
+  font-size: 1rem;
+}
+._ts3 {
+  font-size: 1.2rem;
+}
+._ts4 {
+  font-size: 1.44rem;
+}
+._ts5 {
+  font-size: 1.728rem;
+}
+._ts6 {
+  font-size: 2.0736rem;
+}
+.ts67 {
+  font-size: 2.125rem;
+}
+._ts7 {
+  font-size: 2.48832rem;
+}
+._ts8 {
+  font-size: 2.98598rem;
+}
+._ts9 {
+  font-size: 3.58318rem;
+}
+._ts10 {
+  font-size: 4.29982rem;
+}
+._ts39 {
+  font-size: 2.4375rem;
+}
+
+/************************************
+   FONTES
+ ************************************/
+
+/************************************
+   weight
+ ************************************/
+.fw-600 {
+  font-weight: 600;
+}
+/************************************
+   COLORS
+ ************************************/
+
+/************************************
+   BACKGROUNDS
+ ************************************/
+.bg-1{
+  background-color: #ff8800;
+ }
+.card-bg1{
+  background-color: #729786;
+ }
+ .card-bg2{
+  background-color: #1d1d1d;
+ }
+ .card-bg3{
+  background-color: #73c5ce;
+ }
+ .card-bg4{
+  background-color: #b872c7;
+ }
+ .card-bg5{
+  background-color: #729786;
+ }
+ .card-bg6{
+  background-color: #1d1d1d;
+ }
+ .card-bg7{
+  background-color: #73c5ce;
+ }
+ .card-bg8{
+  background-color: #b872c7;
+ }
+
+/************************************
+   BORDERS
+ ************************************/
+
+/************************************
+   BUTTONS
+ ************************************/
+.btn:not(.btn-sm):not(.btn-lg) {
+  font-size: 14px;
+  padding: 5px;
+}
+.btn:hover:not(:disabled):not(.disabled) {
+  opacity: 0.8;
+}
+
+/************************************
+   FORMS
+ ************************************/
+input {
+  padding: 8px;
+}
+/**********************
+   Opacity
+ ***********************/
+.opacity {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  opacity: 0.6;
+}
+/************************************
+   SPANS
+ ************************************/
+/* classes auxiliares em mob */
+@media (max-width: 768px) {
+  .mt-51 {
+    margin-top: 21.1%;
+  }
+}
+
+/**
+LOADING
+**/
+.loading {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 2000;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#loading {
+  display: none;
+}
