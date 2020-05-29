@@ -10,9 +10,11 @@
     height: 100%;
     z-index: 1;
 }
+
 .h-80{
     height: 90vh;
 }
+
 .carousel-indicators li {
     width: 7px !important;
     height: 7px !important;
@@ -56,17 +58,24 @@
     height: 100%;
 }
 .bg-4{
-    background-color: #cccccc;
+    background-color: #373f54;
 }
+
 .strip{
     width: 100%;
     height: 8vh;
 }
+
 .bg-footer{
     background-image: url('/images/bg-footer.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .bg-grey{
     background-color: #e0e0e0;
+}
+.btn-dark2{
+    background-color: black;
+    color: white;
 }
