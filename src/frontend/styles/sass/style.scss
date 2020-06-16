@@ -3,7 +3,94 @@
 
 
 
-// HEADER
+
+/***********************
+   ESTILO GERAL DO SITE
+************************/
+
+// carrousel top-to-bottom
+.carousel-header{
+    .carousel-indicators{
+    
+        .active{
+            width: 34px !important;
+    border-radius: 0px !important;
+    height: 3px !important;
+    background-color: white !important;
+    color: white;
+        }
+    }
+}
+
+
+.icons-color{
+    color: $lifelink-icons-color;
+}
+.hr-color {
+    background-color:  $lifelink-hr-color;
+}
+// #region TEXT, TITLES AND SUBTITLES 
+.orange-title{
+    color: $lifelink-orange-color !important;
+}
+.blue-title{
+    color: $lifelink-blue-color;
+}
+.black-primary-text{
+    color: $lifelink-black-color;
+   }
+.grey-secondary-color{
+    color: $lifelink-grey-color !important;
+}
+.text-grey-3{
+    color: $lifelink-one-grey-color;
+}
+.black-secondary-text{
+    color: $lifelink-black-secondary-color;
+}
+.purple-secondary-text{
+    color: $lifelink-purple-secondary-color;
+}
+.white-secondary-text{
+    color: $lifelink-white-color;
+}
+.grey-secondary-text{
+    color: $lifelink-grey-secondary-color;
+}
+.muted-text{
+    color: $lifelink-brown-secondary-color;
+}
+
+// #endregion
+
+// #region BODY
+    body{
+        font-family: $font-regular;
+    }
+    .top-container{
+        padding-left: 8.33333%;
+        margin-top: -34px;
+        position: relative;
+    }
+    .surfice{
+
+    }
+// #endregion
+
+// fonts
+.font-black{
+    font-family: $font-black;
+}
+.font-medium{
+    font-family: $font-medium;
+}
+.font-black-italic{
+    font-family: $font-black-italic;
+}
+// #region HEADER
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
 .collapse-100-percent-from-left{
     width: 50%;
     position: absolute;
@@ -14,7 +101,6 @@
 .h-80{
     height: 90vh;
 }
-
 .carousel-indicators li {
     width: 7px !important;
     height: 7px !important;
@@ -22,7 +108,7 @@
     display: block !important;
     margin: 5px 0 !important;
 
-  }
+}
   .carousel-indicators{
     display: block;
     right: 20px !important;
@@ -33,8 +119,7 @@
     width: auto !important;
     margin: 0 !important;
     padding: 0 !important;
-  }
-  
+}
 #nav-toggle-button{
     background-color:white;
 }
@@ -44,34 +129,114 @@
         color: #f68b1f;
     }
 }
-//FOOTER
+.nav-link-black{
+    display: block;
+    padding: .5rem 1rem;
+    color: $lifelink-black-color !important;
+    &:hover{
+        color: #f68b1f;
+    }
+}
+.bg-nav{
+    background-image: linear-gradient(90deg,#c6c6c6,#e8e8e8, #c6c6c6);
+    color: $lifelink-black-color;
+}
+.header-top{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.header-o{
+    height: 15vh;
+}
+.bg-dark-perso{
+    background-color: #282828;
+}
+.nav-link-lifelink{
+    display: block;
+    height: 32px;
+    width: 16%;
+    color: white !important;
+    &:hover{
+        border-bottom: 8px solid #ff8900;
+        text-decoration: none;
+    }
+}
+// #endregion
+
+
+// #region FOOTER
+.font-semibold{
+    font-family: $font-semi-bold;
+}
+
 .mx-300{
     max-width: 300px;
 }
 .bg-mask2{
+    z-index: 9;
     position: absolute;
     top: 0;
     left: 0;
     background: #000;
-    opacity: 0.5;
+    opacity: 0.7;
     width: 40%;
     height: 100%;
 }
-.bg-4{
-    background-color: #373f54;
-}
+.mask-header-div{
+    z-index: 99;
+    position: absolute;
+    width: 19%;
+    height: 100%;
+    color: white;
 
+    .mask-header-top{
+        position: relative;
+        top: 22%;
+        width: fit-content;
+        .hr-know-about{
+            position: absolute;
+            top: 23px;
+            height: 1px;
+            margin-left: 1%;
+            width: 72% !important;
+        }
+    }
+    .mask-header-body{
+        position: absolute;
+        top: 41%;
+        left: 3%;
+        .font-size-perso{
+            font-size: .78rem;
+        }
+    }
+    .mask-header-footer{
+        position: absolute;
+        width: 32%;
+        top: 89%;
+        left: 1%;
+    }
+}
+.bg-4{
+        background-image: linear-gradient(90deg,#373f54,#212530);
+}
+.bg-2{
+    background-image: url("/images/bg-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .strip{
     width: 100%;
     height: 8vh;
 }
-
 .bg-footer{
     background-image: url('/images/bg-footer.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
-
 .bg-grey{
     background-color: #e0e0e0;
 }
@@ -79,3 +244,16 @@
     background-color: black;
     color: white;
 }
+.nav-link-black-footer{
+    color: $lifelink-black-color;
+   
+}
+// #endregion
+
+
+// #region buttons
+.btn-orange{
+   background-color: $lifelink-orange-color;
+}
+// #endregion
+

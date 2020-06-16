@@ -1,6 +1,8 @@
 myapp.controller('MainController',
     function ($rootScope, $scope) {
 
-        console.log('ANGULAR ON');
+         $scope.home = 'active';
+         console.log($scope.home);
+
 
     });

@@ -574,9 +574,41 @@ myapp.controller('GlobalController',
         }
 
     });
+myapp.controller('AboutController',
+    function ($rootScope, $scope) {
+
+        $scope.home = 'disable';
+        console.log($scope.home);
+
+
+
+
+    });
+myapp.controller('BudgetsController',
+    function ($rootScope, $scope) {
+
+        $scope.home = 'disable';
+        console.log($scope.home);
+
+
+
+
+    });
+myapp.controller('ContactController',
+    function ($rootScope, $scope) {
+
+        $scope.home = 'disable';
+        console.log($scope.home);
+
+
+
+
+    });
 myapp.controller('MainController',
     function ($rootScope, $scope) {
 
-        console.log('ANGULAR ON');
+         $scope.home = 'active';
+         console.log($scope.home);
+
 
     });

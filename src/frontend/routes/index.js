@@ -2,9 +2,9 @@ const express = require('express');
 const router = express.Router();
 
  const Main = require('../renders/main');
-// const Contact = require('../renders/contact');
-// const HowItWorks = require('../renders/howItWorks');
-// const Sale = require('../renders/sale');
+ const Contact = require('../renders/contact');
+ const About = require('../renders/about');
+ const Budgets = require('../renders/budgets');
 // const Checkout = require('../renders/checkout');
 // const Login = require('../renders/loginViva');
 // const SaleCompletion = require('../renders/saleCompletion');
@@ -21,11 +21,14 @@ const router = express.Router();
 /* GET home page. */
 router.get('/', Main.retrieve);
 
-// /* GET completion page. */
-// router.get('/contato', Contact.retrieve);
+/* GET budgets page. */
+router.get('/orcamentos', Budgets.retrieve);
 
-// /* GET how it works page. */
-// router.get('/comoFunciona', HowItWorks.retrieve);
+/* GET contact page. */
+router.get('/contato', Contact.retrieve);
+
+/* GET how it works page. */
+router.get('/sobre', About.retrieve);
 
 // /* GET  checkout page. */
 // router.get('/checkout', Checkout.retrieve);

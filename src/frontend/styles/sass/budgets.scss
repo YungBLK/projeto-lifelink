@@ -1,0 +1,37 @@
+@import "./style.scss";
+.pb-10rem{
+    padding-bottom: 10rem!important;;
+}
+.pt-4rem{
+    padding-top: 4rem!important;
+}
+
+.max-w-text{
+   max-width: 547px;
+}
+.letter-spacing-b{
+    letter-spacing: 0.6px;
+}
+.mx-950{
+    max-width: 956px;
+}
+.budgets-title{
+    margin-top: -33px;
+    z-index: 99999;
+    position: relative;
+}
+
+.pr-9{
+    padding-right: 9rem!important;
+}
+
+.pl-7{
+    padding-left: 7rem!important;
+}
+
+
+.btn-budgets{
+    color: black;
+    border: 1px solid grey !important;
+    background-color: white;
+}

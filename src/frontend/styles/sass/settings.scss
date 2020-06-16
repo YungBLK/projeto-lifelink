@@ -1,52 +1,121 @@
-/************************************
-  
-  
-  DEFINIÇÕES DE FONTES, CORES E OUTRAS VARIÁVEIS
-  
-  
-  ************************************/
+/***************************************
+  Configuração dos components
+****************************************/
 
-/************************************
-  BOOTSTRAP
-  ************************************/
+// #region PALETA DE CORES
+$facebook-color: #3b5994;
+$google-color: #d34836;
+$lifelink-orange-color: #ff8900;
+$lifelink-grey-color: #898989;
+$lifelink-black-color: #020202;
+$lifelink-white-color: #fbfffc;
+$lifelink-black-secondary-color: #5a5a5a;
+$lifelink-icons-color: #373737; 
+$lifelink-hr-color: #353535;
+$lifelink-purple-secondary-color: #7a6369;
+$lifelink-white-color: #fbfffc;
+$lifelink-one-grey-color: #585858;
+$lifelink-blue-color: #373f55;
+$lifelink-grey-secondary-color: #898989;
+$lifelink-brown-secondary-color: #9c6400;
+// #endregion
+
+// #region BOOTSTRAP
 @import "../../../../bower_components/bootstrap/scss/bootstrap.scss";
 
-/************************************
-  ANGULARJS-TABLE
-  ************************************/
+// #endregion
 
+// #region FONTES
+@font-face {
+  font-family: "";
+  src: url("/fonts/Lato/Lato-Semibold.ttf")
+  }
 
-/************************************
-  HANDSONTABLE
-  ************************************/
+  @font-face {
+    font-family: "latosemibold";
+    src: url("/fonts/Lato/Lato-Semibold.ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+  $font-semi-bold: "latosemibold";
+  
+  @font-face {
+    font-family: "latoregular";
+    src: url("/fonts/Lato/Lato-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+  $font-regular: "latoregular";
+  
+  @font-face {
+    font-family: "latoblack";
+    src: url("/fonts/Lato/Lato-Black.ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+  $font-black: "latoblack";
 
+  @font-face {
+    font-family: "latomedium";
+    src: url("/fonts/Lato/Lato-Medium.ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+  $font-medium: "latomedium";
 
-/************************************
-  FONTES
-  ************************************/
+   @font-face {
+     font-family: "latoblackitalic";
+     src: url("/fonts/Lato/Lato-BlackItalic.tff");
+     font-weight: normal;
+     font-style: normal;
+   }
+
+   $font-black-italic: "latoblackitalic";
+  
+  // @font-face {
+  //   font-family: "robotoregular";
+  //   src: url("/fonts/Roboto/Roboto-Regular.woff") format("woff");
+  //   font-weight: normal;
+  //   font-style: normal;
+  // }
+  // $font-roboto-regular: "robotoregular";
+  
+  // @font-face {
+  //   font-family: "myriadprolight";
+  //   src: url("/fonts/MyriadPro/MyriadPro-Light.woff") format("woff");
+  //   font-weight: normal;
+  //   font-style: normal;
+  // }
+  // $font-light: "myriadprolight";
+  
+  // @font-face {
+  //   font-family: "myriadprobold";
+  //   src: url("/fonts/MyriadPro/MYRIADPRO-BOLD.woff") format("woff");
+  //   font-weight: normal;
+  //   font-style: normal;
+  // }
+  // $font-bold: "myriadprobold";
+  
+  // .font-family-arial {
+  //   font-family: Arial, Helvetica, sans-serif;
+  // }
+  
 @import "../../../../dist/fonts/FontAwesome/scss/brands.scss";
 @import "../../../../dist/fonts/FontAwesome/scss/solid.scss";
 @import "../../../../dist/fonts/FontAwesome/scss/regular.scss";
 @import "../../../../dist/fonts/FontAwesome/scss/fontawesome.scss";
+// #endregion
 
-/************************************
-  COLORS
-  ************************************/
-$facebook-color: #3b5994;
-$google-color: #d34836;
-
-
-/************************************
-  HTML COMPONENTS SETTINGS
-  ************************************/
+// #region HTML COMPONENTS SETTINGS
 ul {
   list-style: none;
 }
 li {
   list-style-type: none;
 }
+// #endregion
 
-
+// #region BUTTONS
 .btn:not(.btn-default) {
   border-radius: 21px;
   text-align: center;
@@ -63,23 +132,9 @@ li {
     background-color: $primary;
   }
 }
+// #endregion
 
-.btn-cta-facebook {
-  background-color: #3b5998;
-}
-
-.btn-cta-orange {
-  background-image: linear-gradient(to right, #ffbb00, #ff8b00);
-}
-
-.btn-cta-blue {
-  background-image: linear-gradient(to right, #038ba1, #006c7e);
-}
-
-.btn-cta-white {
-  background-color: white;
-}
-
+// #region FORMS
 .form-control:focus {
   color: #495057;
   background-color: #fff;
@@ -87,7 +142,9 @@ li {
   outline: 0;
   box-shadow: 0 0 0 0.2rem #eeeeee;
 }
-//  SCROLLBOX
+// #endregion
+
+// #region SCROLLBOX
 ::-webkit-scrollbar-track {
   background-color: #f4f4f4;
 }
@@ -98,8 +155,6 @@ li {
 ::-webkit-scrollbar-thumb {
   background: #ff8b00;
 }
-
-//  SCROLLBOX
 body {
   scrollbar-base-color: #c0c0c0;
   scrollbar-base-color: #c0c0c0;
@@ -109,3 +164,4 @@ body {
   scrollbar-arrow-color: black;
   scrollbar-shadow-color: #c0c0c0;
 }
+// #endregion

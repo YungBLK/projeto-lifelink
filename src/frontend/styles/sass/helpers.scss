@@ -1,18 +1,113 @@
-/************************************
-  CLASSES AUXILIARES
-************************************/
+/***************************************
+  Classes Auxiliares e etc
+****************************************/
+
+
+// #region CLASSES AUXILIARES
+// rotate text
+.rotate-text{
+  transform: rotate(270deg);
+}
+
+
+// width
+.w-40{
+  width: 40%;
+}
+.w-35{
+  width: 35%;
+}
+//z-index
+.z-index-priority{
+ z-index: 9999; 
+}
+  // border
+.rm-border{
+  border: none;
+}
+.rm-background{
+  background-color: #fbfbfb !important;
+}
+// padding
+.pl-6{
+  padding-left: 6rem;
+}
+.pt-6px{
+  padding-top: 6px;
+}
+.pl-11{
+  padding-left: 12rem;
+}
 .h-100{
   height: 100% ;
 }
+.max-w-600{
+  max-width: 633px;
+}
+.max-w-80{
+  max-width: 80%;
+}
+.mx-450{
+  max-width: 450px;
+}
+.mx-250{
+  max-width: 253px;
+}
+
+.pb-6rem{
+  padding-bottom: 8rem!important;
+}
+.pt-6rem{
+  padding-top: 7rem!important;
+}
+.w-90{
+  width: 90%;
+}
+// position
+
 .p-absolute{
   position: absolute;
 }
+
+// index
 .z-index-1{
   z-index: 1;
 }
-/************************************
-   NGCLOAK
- ************************************/
+
+.w-nowrap{
+  white-space: nowrap;
+}
+
+// font
+.fw-600 {
+  font-weight: 600;
+}
+
+
+// LETTER
+.letter-spacing{
+  letter-spacing: 3px;
+  white-space: nowrap;
+ 
+}
+.lowercase{
+  text-transform: lowercase;
+}
+.uppercase{
+  text-transform: uppercase;
+}
+.justify-content{
+  justify-content: center;
+}
+.align-items{
+  align-items: center;
+}
+.letter-spacing-font-size{
+  font-size: 12px;
+}
+// #endregion 
+
+// #region NGCLOAK
 [ng\:cloak],
 [ng-cloak],
 [data-ng-cloak],
@@ -21,19 +116,20 @@
 .x-ng-cloak {
   display: none !important;
 }
+// #endregion
 
-/************************************
-   ESCALA DE FONTES
- ************************************/
+// #region ESCALA DE FONTES
 ._tsmin {
   font-size: 0.5rem;
 }
 ._ts0 {
   font-size: 0.69444rem;
 }
-
 ._ts1 {
   font-size: 0.83333rem;
+}
+._ts15 {
+  font-size: 15px;
 }
 ._ts2 {
   font-size: 1rem;
@@ -68,26 +164,14 @@
 ._ts39 {
   font-size: 2.4375rem;
 }
+// #endregion
 
-/************************************
-   FONTES
- ************************************/
-
-/************************************
-   weight
- ************************************/
-.fw-600 {
-  font-weight: 600;
-}
-/************************************
-   COLORS
- ************************************/
-
-/************************************
-   BACKGROUNDS
- ************************************/
+// #region BACKGROUNDS
 .bg-1{
   background-color: #ff8800;
+ }
+ .bg-lightgrey{
+  background-color: #fbfbfb;
  }
 .card-bg1{
   background-color: #729786;
@@ -114,13 +198,13 @@
   background-color: #b872c7;
  }
 
-/************************************
-   BORDERS
- ************************************/
+ 
+// #endregion
 
-/************************************
-   BUTTONS
- ************************************/
+// #region  BORDERS
+// #endregion
+
+// #region BUTTONS
 .btn:not(.btn-sm):not(.btn-lg) {
   font-size: 14px;
   padding: 5px;
@@ -128,16 +212,15 @@
 .btn:hover:not(:disabled):not(.disabled) {
   opacity: 0.8;
 }
+// #endregion
 
-/************************************
-   FORMS
- ************************************/
+// #region FORMS
 input {
   padding: 8px;
 }
-/**********************
-   Opacity
- ***********************/
+// #endregion
+
+// #region  Opacity
 .opacity {
   width: 100%;
   height: 100%;
@@ -147,32 +230,16 @@ input {
   background-color: #000000;
   opacity: 0.6;
 }
-/************************************
-   SPANS
- ************************************/
-/* classes auxiliares em mob */
+// #endregion
+
+// #region  SPANS
+
+// #endregion
+
+// #region classes auxiliares em mob 
 @media (max-width: 768px) {
   .mt-51 {
     margin-top: 21.1%;
   }
 }
-
-/**
-LOADING
-**/
-.loading {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: 2000;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.85);
-  color: white;
-  font-size: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#loading {
-  display: none;
-}
+// #endregion

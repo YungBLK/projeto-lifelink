@@ -15,28 +15,75 @@
     left: 8px;
     font-size: 22px;
     color: white;
-    z-index: 2;
+    z-index: 99999;
 }
 
 .imgLogo{
     width: 5%;
 }
-.flip-card{
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    display: flex;
     width: 245px;
     height: 350px;
+    color: $lifelink-white-color !important;
+    border: 1px solid #f1f1f1;
+
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+
+  
+  /* Style the back side */
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
+
+.centered-item{
+    padding-top: 165px;
+    padding-bottom: 165px;
 }
+
 .bg-2{
     background-image: url("/images/bg-2.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
-.header-top{
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030;
+
+.pl-perso{
+    padding-left: 9rem!important;
 }
+
+
+
 .bg-mask{
     position: absolute;
     top: 0;
@@ -46,10 +93,132 @@
     width: 100%;
     height: 100%;
 }
+
 .mx-500{
     max-width: 500px;
 }
 
 .bg-3{
     background-color: #ffba00;
+}
+
+#about{
+    color: white;
+    span{
+        color:#cee4e1;    
+    }
+    .about{
+        text-align: left;
+    }
+    .about-with-hr{
+        padding-top: 4%;
+        padding-right: 21%;
+    }
+    .hr-about{
+        color: white;
+    background-color: white;
+    width: 15%;
+    }
+    
+}
+
+#brands{
+    
+    .front{
+        color: white;
+    }
+}
+
+
+
+.bottom{
+    position: relative;
+    bottom: 0;
+}
+
+.userPic{
+    width: 10%;
+}
+
+.client-info-desc{
+}
+.input-news{
+    outline: 0;
+    border-radius: 25rem;
+    border: 0;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.little-to-bottom{
+    position: relative;
+    top: 38px;
+}
+// Contato
+.hr-contact{
+    background-color: #040000;
+    width: 15%;
+    display: inline-flex;
+    height: 2px;
+}
+.square-newsletter{
+    width: 100%;
+    position: relative;
+    height: 29.2%;
+}
+
+.bg-mask-grey{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #464646;
+    opacity: .5;
+    width: 100%;
+    height: 100%;
+}
+.bg-mask-orange{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #f80;
+    opacity: .5;
+    width: 100%;
+    height: 71.6%;
+}
+.bg-mask-white{
+    position: absolute;
+    top: 533px;
+    left: 0;
+    background: #ffefef;
+    opacity: .2;
+    width: 100%;
+    height: 28.6%;
+}
+.bg-mask-chumbo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #636363;
+    opacity: .5;
+    width: 100%;
+    height: 72%;
+}
+.text-body{
+    max-width: 37%;
+}
+.land{
+    height: 531px;
+}
+.grampa{
+    height: 531px;
+}
+.row98{
+    height: 98.7% !important;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.h-98{
+    height: 98.7% !important;
 }
