@@ -21,7 +21,14 @@
         }
     }
 }
-
+.areaClose{
+    position: absolute;
+    top: 1vh;
+    left: 8px;
+    font-size: 22px;
+    color: white;
+    z-index: 99999;
+}
 
 .icons-color{
     color: $lifelink-icons-color;
@@ -256,4 +263,5 @@
    background-color: $lifelink-orange-color;
 }
 // #endregion
+
 
