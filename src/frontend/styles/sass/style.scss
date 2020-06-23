@@ -144,6 +144,14 @@
         color: #f68b1f;
     }
 }
+
+.nav-link-black-whitout-p{
+    color: $lifelink-black-color !important;
+    &:hover{
+        color: #f68b1f !important;
+    }
+}
+
 .bg-nav{
     background-image: linear-gradient(90deg,#c6c6c6,#e8e8e8, #c6c6c6);
     color: $lifelink-black-color;
