@@ -31,6 +31,7 @@ function minifyCSS() {
 function concatJS() {
   return src([
     'bower_components/jquery/dist/jquery.min.js',
+    
     'bower_components/angular/angular.min.js',
     'bower_components/bootstrap/dist/js/bootstrap.bundle.min.js',
     'bower_components/bootstrap/js/dist/util.js',

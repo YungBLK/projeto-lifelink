@@ -18,9 +18,13 @@ $lifelink-one-grey-color: #585858;
 $lifelink-blue-color: #373f55;
 $lifelink-grey-secondary-color: #898989;
 $lifelink-brown-secondary-color: #9c6400;
+$lifelink-yellow-collor: #ffba00;
+$lifelink-yellow-dark-collor: #ffba00;
+$lifelink-black-dark-color: #000;
 // #endregion
 
 // #region BOOTSTRAP
+@import "../../../../bower_components/bootstrap/scss/bootstrap.scss";
 @import "../../../../bower_components/bootstrap/scss/bootstrap.scss";
 
 // #endregion
@@ -57,7 +61,7 @@ $lifelink-brown-secondary-color: #9c6400;
 
   @font-face {
     font-family: "latomedium";
-    src: url("/fonts/Lato/Lato-Medium.ttf");
+    src: url("/fonts/lato-font/fonts/lato-medium/lato-medium.woff") format('woff');
     font-weight: normal;
     font-style: normal;
   }
@@ -65,9 +69,9 @@ $lifelink-brown-secondary-color: #9c6400;
 
    @font-face {
      font-family: "latoblackitalic";
-     src: url("/fonts/Lato/Lato-BlackItalic.tff");
-     font-weight: normal;
-     font-style: normal;
+     src: url("/fonts/lato-font/fonts/lato-black-italic/lato-black-italic.woff") format('woff');
+     font-weight: bold;
+     font-style: italic;
    }
 
    $font-black-italic: "latoblackitalic";

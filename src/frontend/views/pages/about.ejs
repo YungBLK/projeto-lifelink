@@ -1,6 +1,6 @@
 <%- include('templates/header.ejs'); %>
 <div class="container-fluid bg-2">
-    <div class="container top-container pb-5 mb-5">
+    <div class="container top-container pb-5 ">
         <h1 class="blue-title font-weight-bold _ts9 font-italic budgets-title">Conheça nossa história</h1>
         <div class="row mt-5 pt-5">
             <div class="col-md-3">
@@ -8,10 +8,10 @@
                 <div class="border-the-lifelink-way"></div>
             </div>
             <div class="col-md-9">
-                <p>Nunc ac ante nunc. Maecenas arcu purus, maximus ac nisl eget, rutrum iaculis purus. In a eleifend
+                <p class="_ts2">Nunc ac ante nunc. Maecenas arcu purus, maximus ac nisl eget, rutrum iaculis purus. In a eleifend
                     est. Nullam ac eros enim. Nulla facilisi. Sed condimentum condimentum arcu eu lobortis. Donec in
                     tortor, fringilla varius justo feugiat id</p>
-                <p>Nunc ac ante nunc. Maecenas arcu purus, maximus ac nisl eget, rutrum iaculis purus. In a eleifend
+                <p class="_ts2">Nunc ac ante nunc. Maecenas arcu purus, maximus ac nisl eget, rutrum iaculis purus. In a eleifend
                     est. Nullam ac eros enim. Nulla facilisi. Sed condimentum condimentum arcu eu lobortis. Donec in
                     convallis odio.</p>
             </div>
@@ -19,45 +19,65 @@
         <div class="row justify-content  text-center mt-0 pt-0">
             <div class="pl-s">
                 <img src="/images/babiSign.png">
-                <p class=""><span class="orange-title font-weight-bold">BARBARA</span> - <span
+                <p class="_ts2"><span class="orange-title font-weight-bold">BARBARA</span> - <span
                         class="grey-secondary-color">CEO LIFELINK</span></p>
             </div>
         </div>
     </div>
 </div>
-<section class="bg-white pt-5 pb-5" id="timeline-wrapper">
+
+<section class="bg-white pt-5 pb-5 mb-5" id="timeline-wrapper">
     <div class="container">
+        <div class="text-center mb-4">
+            <h3 class="blue-title font-weight-bold">Nossa trajetória</h3>
+        </div>
         <div class="row">
             <div class="timeline-top mx-auto">
                 <div class="top-year">2010</span></div>
-
             </div>
             <div class="timeline-block">
                 <div class="timeline-events">
                     <br>
-
-                    <div class="event l-event col-md-6 col-sm-6 col-xs-8 "><span class="thumb "></span>
+                    <div class="event red-event-l l-event col-md-6 col-sm-6 col-xs-8 "><span class="thumb "></span>
                         <div class="event-body border">
                             <div class="event-content">
                                 <span class="text-muted text-left" style="display:block; margin: 0"><small>JAN
                                         2010</small></span>
-                                <h5 class="text-dark text-left"><span class="point"></span>Fundação da Lifelink</h5>
-                                <p class="text-muted text-left">Lorem ipsum dolor sit amet,
+                                <h5 class="text-dark _ts3 text-left"><span class="point"></span>Fundação da Lifelink</h5>
+                                <p class="text-muted text-left _ts2">Lorem ipsum dolor sit amet,
                                     consectetur adipisicing elit. Quaerat ipsum voluptates sapiente beatae
                                 </p>
                             </div>
                         </div> <!-- end of event body -->
                         <div class="clear-fix"></div>
                     </div>
-
+                    <div class="clearfix"></div>
                     <div class="row"></div>
-                    <div class="event r-event col-md-6 col-sm-6 col-xs-8 "><span class="thumb"></span>
+                    <div class="event blue-event-l l-event col-md-6 col-sm-6 col-xs-8 "><span class="thumb"></span>
+                        <div class=" event-body border">
+                            <div class="event-content">
+                                <span class="text-muted text-left" style="display:block; margin: 0"><small>DEZ
+                                        2010</small></span>
+                                <h5 class="text-dark _ts3 text-left"><span class="point-l-blue"></span>Lorem ipsum dolor sit
+                                    amet</h5>
+                                <p class="text-muted text-left _ts2">Lorem ipsum dolor sit amet,
+                                    consectetur adipisicing elit. Quaerat ipsum voluptates sapiente beatae
+                                    non praesentium vitae dolorum qui, reprehenderit harum
+                                </p>
+                                <a href="/blog" class="orange-title text-right text-bold pt-3 _ts2">Veja mais em nosso
+                                    blog...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row"></div>
+                    <div class="event green-event-r r-event col-md-6 col-sm-6 col-xs-8 "><span class="thumb"></span>
                         <div class=" event-body border">
                             <div class="event-content">
                                 <span class="text-muted text-left" style="display:block; margin: 0"><small>JUN
                                         2010</small></span>
-                                <h5 class="text-dark text-left"><span class="point-r"></span>Mudança de escritorio</h5>
-                                <p class="text-muted text-left">Lorem ipsum dolor sit amet,
+                                <h5 class="text-dark _ts3 text-left"><span class="point-r-green"></span>Mudança de escritorio
+                                </h5>
+                                <p class="text-muted text-left _ts2">Lorem ipsum dolor sit amet,
                                     consectetur adipisicing elit. Quaerat ipsum voluptates sapiente beatae
                                     non praesentium vitae dolorum qui, reprehenderit harum <br>
                                 </p>
@@ -70,49 +90,63 @@
                         </div>
                         <div class="clear-fix"></div>
                     </div>
-
-                    <div class="row"></div>
-                    <div class="event l-event col-md-6 col-sm-6 col-xs-8 "><span class="thumb"></span>
+                    <div class="year-div font-weight-bold">
+                        <div class="year2 font-weight-bold">2012</div>
+                    </div>
+                    <div class="event red-event-l l-event col-md-6 col-sm-6 col-xs-8 "><span class="thumb"></span>
                         <div class=" event-body border">
 
                             <div class="event-content">
                                 <span class="text-muted text-left" style="display:block; margin: 0"><small>MAI
                                         2012</small></span>
-                                <h5 class="text-dark text-left"><span class="point"></span>Pharetra nisi id ertur</h5>
-                                <p class="text-muted text-left">Lorem ipsum dolor sit amet,
+                                <h5 class="text-dark _ts3 text-left "><span class="point"></span>Pharetra nisi id ertur</h5>
+                                <p class="text-muted text-left  _ts2">Lorem ipsum dolor sit amet,
                                     consectetur adipisicing elit. Quaerat ipsum voluptates sapiente beatae
                                     non praesentium vitae dolorum qui, reprehenderit harum <br>
-                                    <a href="/blog" class="text-muted text-right text-bold">Veja mais em nosso
+                                    <a href="/blog" class="orange-title text-right _ts2">Veja mais em nosso
                                         blog...</a>
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="year-div font-weight-bold">
-                        <div class="year2 font-weight-bold">2012</div>
-                    </div>
-                    <div class="clearfix"></div>
-
-                    <div class="row"></div>
-                    <div class="event r-event col-md-6 col-sm-6 col-xs-8 ">
+                    <div class="event green-event-r r-event col-md-6 col-sm-6 col-xs-8 ">
                         <span class="thumb"></span>
                         <div class=" event-body border">
-
                             <div class="event-content">
-                                <h5 class="text-dark text-left">IT-PLUS programming solution </h5>
-                                <span class="text-muted text-left" style="display:block; margin: 0"><small>19 October
-                                        2016</small></span>
-                                <br><br>
-                                <blockquote class="text-muted text-left">Lorem ipsum dolor sit amet,
-                                    consectetur adipisicing elit. Quaerat ipsum voluptates sapiente beatae
-                                    non praesentium vitae dolorum qui, reprehenderit harum <br>
-                                    <cite class="text-muted text-right text-bold">- Alex Martin</cite>
-                                </blockquote>
+                                <span class="text-muted text-left" style="display:block; margin: 0"><small>DEZ
+                                        2012</small></span>
+                                <h5 class="text-dark _ts3 text-left"><span class="point-r-green"></span> Mattis magna turpis
+                                </h5>
+                                <p class="text-muted text-left _ts2">Lorem ipsum dolor sit amet,
+                                    consectetur adipisicing elit. Quaerat ipsum voluptates sapiente beatae <br>
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="clearfix"></div>
-
+                    <div class="div-year">
+                        <div class="year3 font-weight-bold">2017</div>
+                    </div>
+                    <div class="row"></div>
+                    <div class="event blue-event-r r-event col-md-6 col-sm-6 col-xs-8 ">
+                        <span class="thumb"></span>
+                        <div class=" event-body border">
+                            <div class="event-content">
+                                <span class="text-muted text-left" style="display:block; margin: 0"><small>DEZ
+                                        2017</small></span>
+                                <h5 class="text-dark _ts3 text-left"><span class="point-r-blue"></span> Lançamento VIVA</h5>
+                                <p class="text-muted text-left _ts2">Lorem ipsum dolor sit amet,
+                                    consectetur adipisicing elit.
+                                </p>
+                                <a class="orange-title text-right _ts2">Veja mais em nosso blog</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row"></div>
+                    <div class="year-div font-weight-bold">
+                        <div class="year2 font-weight-bold">2012</div>
+                    </div>
+                    <div class="clearfix"></div>
                 </div>
                 <div class="clearfix"></div>
             </div>
@@ -124,58 +158,66 @@
     </div>
 </section>
 
-
 <section class="bg-1 container-fluid">
     <div class="container">
+
         <div class="row">
-            <article class="col-md-6">
-                    <h1>Nossas conquistas</h1>
-                    <p>Lorem ipsum dolet, Lorem ipsum doletLorem ipsum doletLorem ipsum doletLorem ipsum dolet
-                        Lorem ipsum doletLorem ipsum doletLorem ipsum doletLorem ipsum doletLorem ipsum doletLorem ipsum
-                        dolet
-                        Lorem ipsum doletLorem ipsum doletLorem ipsum doletLorem ipsum dolet,Lorem ipsum dolet.
-
-                        Lorem ipsum doletLorem ipsum doletLorem ipsum doletLorem ipsum doletLorem ipsum dolet.
-                        Lorem ipsum doletLorem ipsum doletLorem ipsum doletLorem ipsum doletLorem ipsum doletLorem ipsum
-                        dolet,Lorem ipsum dolet
-                        Lorem ipsum dolet, Lorem ipsum doletLorem ipsum doletLorem ipsum dolet.
-                    </p>
-                    <h1 class="m-0">Nossas conquistas</h1>
-            </article>
-        </div>
-        <div class="row">
-                <article class="col-md-6">
-                    <div class="row">
-                    <div class="col-md-2">
-                        <h1>126</h1>
-                        <p>Projetos</p>
-                    </div>
-
-                    <div class="col-md-2">
-                        <h1>105</h1>
-                        <p>Clientes monitorados</p>
-                    </div>
-
-                    <div class="col-md-2">
-                        <h1>19</h1>
-                        <p>Empresas Clientes</p>
-                    </div>
-
-                    <div class="col-md-2">
-                        <h1>7</h1>
-                        <p>Estados presentes</p>
+            <article class="col-md-8 p-5">
+                <div class="row">
+                    <div class="main-content-article">
+                        <div class="article-header pb-4">
+                            <h1 class="blue-title font-black-italic font-weight-bold">Nossas conquistas</h1>
+                        </div>
+                        <div class="article-body text-white text-left max-600">
+                            <p class="pb-3 _ts2">Praesent volutpat ut nisl inlit hendrerit. Vestibulum antem ipsum isul
+                                primis in faucibus orci luctus et ultrices posible uere cubilia cura
+                                emil mil Etiam porttitor, lacus in luctus mun. Praesent volutpat ut nisl inlit
+                                hendrerit. Vestibulum antem ipsumisul primis in faucibus orci luctus et ul
+                                trices posible uere cubilia cura emil mil Etiam porttitor, lacus in luctus mun.
+                            </p>
+                            <p class="pb-4 _ts2">
+                                Praesent volutpat ut nisl inlit hendrerit. Vestibulum antem ipsumisul primis
+                                in faucibus orci luctus et ultrices posible uere cubilia cura emil mil Etiam
+                                porttitor, lacus in luctus mun.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                </article>
-        </div>
+                <div class="row">
+                    <div class="col-md-3 p-0">
+                        <h1 class="text-yellow-dark _ts9">126</h1>
+                        <p class="text-black _ts2">Projetos</p>
+                    </div>
+                    <div class="col-md-3 p-0">
+                        <h1 class="text-yellow-dark _ts9">105</h1>
+                        <p class="text-black _ts2">Clientes monitorados</p>
+                    </div>
 
-            <aside class="col-md-6">
-                <div class="year-of-xp">
-                    <h1>14</h1>
-                    <p>Anos de experiências</p>
+                    <div class="col-md-3 p-0">
+                        <h1 class="text-yellow-dark _ts9">19</h1>
+                        <p class="text-black _ts2">Empresas Clientes</p>
+                    </div>
+
+                    <div class="col-md-3 p-0">
+                        <h1 class="text-yellow-dark _ts9">7</h1>
+                        <p class="text-black _ts2">Estados presentes</p>
+                    </div>
+                </div>
+            </article>
+            <aside class="col-md-4 pl-4">
+                <div class="year-of-xp bg-yellow blue-title">
+                    <div class="year-of-xp-title">
+                        <h1 class="big-number">14</h1>
+                    </div>
+                    <div class="year-of-xp-footer">
+                        <p class="_ts2 m-0">ANOS DE EXPERIÊNCIA</p>
+                        <p class="_ts2 m-0">EM MONITORAMENTO</p>
+                    </div>
                 </div>
             </aside>
+
         </div>
+    </div>
     </div>
 </section>
 
