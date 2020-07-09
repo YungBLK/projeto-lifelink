@@ -6,11 +6,11 @@ const services = {
     retrieve(req, res) {
       const renderVariables = {};
       renderVariables.title = 'Serviços | Lifelink';
-      renderVariables.path = 'home';
-      renderVariables.controller = 'MainController';
-      renderVariables.description = 'Página principal da marca LIFELINK.';
-      res.render('pages/main', renderVariables);
+      renderVariables.path = 'services';
+      renderVariables.controller = 'ServicesController';
+      renderVariables.description = 'Página descrevendo os servicos atuacao da Lifelink';
+      res.render('pages/services', renderVariables);
     }
   };
   
-  module.exports = main;
+  module.exports = services;

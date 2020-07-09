@@ -5,7 +5,7 @@ const router = express.Router();
  const Contact = require('../renders/contact');
  const About = require('../renders/about');
  const Budgets = require('../renders/budgets');
-// const Checkout = require('../renders/checkout');
+ const Services = require('../renders/services');
 // const Login = require('../renders/loginViva');
 // const SaleCompletion = require('../renders/saleCompletion');
 // const PrivacyTerms = require('../renders/privacyTerms');
@@ -30,8 +30,8 @@ router.get('/contato', Contact.retrieve);
 /* GET how it works page. */
 router.get('/sobre', About.retrieve);
 
-// /* GET  checkout page. */
-// router.get('/checkout', Checkout.retrieve);
+/* GET  Services page. */
+router.get('/servicos', Services.retrieve);
 
 // /* GET  login viva page. */
 // router.get('/loginViva', Login.retrieve);
