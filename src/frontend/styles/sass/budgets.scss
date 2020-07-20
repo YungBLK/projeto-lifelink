@@ -15,11 +15,6 @@
 .mx-950{
     max-width: 956px;
 }
-.budgets-title{
-    margin-top: -33px;
-    z-index: 99999;
-    position: relative;
-}
 
 .pr-9{
     padding-right: 9rem!important;
@@ -34,4 +29,31 @@
     color: black;
     border: 1px solid grey !important;
     background-color: white;
+}
+
+
+@media screen and(min-width: 768px) {
+    .budgets-title{
+        margin-top: -33px;
+        z-index: 999;
+        position: relative;
+    }
+    .pl-button{
+        padding: 0;
+    }
+
+}
+@media (min-width: 768px) and (max-width: 940px) {
+    .card{
+        width: 15rem;
+    }
+
+}
+@media screen and(max-width: 767px) {
+    .p-mobile{
+        padding: 1rem;
+    }
+    .pl-11{
+        padding-left: 3rem !important;
+    }
 }

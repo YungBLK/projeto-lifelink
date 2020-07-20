@@ -28,8 +28,10 @@
                     </div>
                     <div class="mt-5">
                         <p class="font-weight-bold">contato@lifelink.com.br</p>
-                        <p class="p-0 m-0"><a class="nav-link-black-whitout-p d-block" href="www.google.com.br">facebook</a></p>
-                        <p class="p-0 m-0"><a class="nav-link-black-whitout-p d-block" href="www.google.com.br">instagram</a></p>
+                        <p class="p-0 m-0"><a href="https://www.instagram.com/explore/locations/500436543356938/lifelink-monitoramento-ltda/?hl=pt-br" class="nav-link-black-whitout-p d-block"
+                                href="www.google.com.br">facebook</a></p>
+                        <p class="p-0 m-0"><a href="https://www.facebook.com/www.lifelink.com.br/" class="nav-link-black-whitout-p d-block"
+                                href="www.google.com.br">instagram</a></p>
                     </div>
                     <div class="mt-5">
                         <p class="font-weight-bold">Endereço</p>
@@ -56,38 +58,87 @@
             <div class="col-md-6 ">
                 <div class="p-5 mt-5">
                     <h1 class="text-white mb-5">Envia sua<br> mensagem</h1>
-                    <form>
+                    <form role="form" name="contactForm" ng-submit="formAuthenticate(contactForm)" novalidate>
+                        <!-- MENSAGENS DE ALERTA -->
+                        <flash-message class="mt-1" show-close="false" duration="5000"></flash-message>
+                        <!-- Mensagens -->
+                        <span ng-cloak ng-show="showSuccess" class="mb-2 d-block pl-1 text-white font-weight-bold ">Sua mensagem foi
+                            enviada com
+                            sucesso !</span>
+                        <span ng-cloak ng-show="showErro" class="mb-2 d-block pl-1 text-white font-weight-bold">Erro ao enviar sua
+                            mensagem!</span>
+                        <!-- Fim mensagens -->
                         <div class="mb-5 input-group">
-                            <input  class="w-100 input-border-bottom" type="email" placeholder="Email">
+                            <input class="w-100 input-border-bottom" type="email" placeholder="Email" name="email"
+                                id="email_contact" ng-model="contactData.email" maxlength="150" required ng-class="
+                           { 
+                           'is-invalid': (contactForm.email.$dirty || contactForm.$submitted) && contactForm.email.$invalid, 
+                           'is-valid' : (contactForm.email.$dirty || contactForm.$submitted) && contactForm.email.$valid 
+                            }">
+                            <div class="invalid-feedback h-5" ng-messages="contactForm.email.$error"
+                                ng-show="(contactForm.email.$dirty || contactForm.$submitted)">
+                                <span class="m-0" ng-message="required">E-mail obrigatório</span>
+                            </div>
                         </div>
-    
+
                         <div class="mb-5 input-group">
-                            <input class="w-100 input-border-bottom" type="text" placeholder="Seu nome"> 
+                            <input class="w-100 input-border-bottom" type="text" placeholder="Seu nome" name="name"
+                                ng-model="contactData.name" maxlength="60" required ng-class="
+                            { 
+                            'is-invalid': (contactForm.name.$dirty || contactForm.$submitted) && contactForm.name.$invalid, 
+                            'is-valid' : (contactForm.name.$dirty || contactForm.$submitted) && contactForm.name.$valid 
+                             }">
+                            <div class="invalid-feedback h-5" ng-messages="contactForm.name.$error"
+                                ng-show="(contactForm.name.$dirty || contactForm.$submitted)">
+                                <span class="m-0" ng-message="required">Nome obrigatório</span>
+                            </div>
                         </div>
-    
+
                         <div class="mb-5 input-group">
-                            <input type="text" class="w-100 input-border-bottom" placeholder="Assunto">
+                            <input type="text" name="subject" class="w-100 input-border-bottom"
+                                ng-model="contactData.subject" placeholder="Assunto" required id="subject" ng-class="
+                            { 
+                            'is-invalid': (contactForm.subject.$dirty || contactForm.$submitted) && contactForm.subject.$invalid, 
+                            'is-valid' : (contactForm.subject.$dirty || contactForm.$submitted) && contactForm.subject.$valid 
+                             }">
+                            <div class="invalid-feedback h-5" ng-messages="contactForm.subject.$error"
+                                ng-show="(contactForm.subject.$dirty || contactForm.$submitted)">
+                                <span class="m-0" ng-message="required">Assunto obrigatório</span>
+                            </div>
                         </div>
-    
+
                         <div class="mb-5 h-50 input-group">
-                            <textarea class="input-border-bottom w-100" placeholder="Mensagem"></textarea>
+                            <textarea name="message" ng-model="contactData.message" class="input-border-bottom w-100"
+                                ng-required="true" id="message" placeholder="Mensagem" ng-class="
+                           { 
+                           'is-invalid': (contactForm.message.$dirty || contactForm.$submitted) && contactForm.message.$invalid, 
+                           'is-valid' : (contactForm.message.$dirty || contactForm.$submitted) && contactForm.message.$valid 
+                            }">
+                           </textarea>
+
+                            <div class="invalid-feedback h-5" ng-messages="contactForm.message.$error"
+                                ng-show="(contactForm.message.$dirty || contactForm.$submitted)">
+                                <span class="m-0" ng-message="required">Mensagem obrigatória</span>
+                            </div>
                         </div>
+
                         <div class="input-group mt-5 ">
-                            <button class="btn bg-white button-contact rounded-0 px-4 py-3 ">Enviar<i class="fas fa-long-arrow-alt-right ml-4"></i></button>
+                            <button class="btn bg-white button-contact rounded-0 px-4 py-3 ">Enviar<i
+                                    class="fas fa-long-arrow-alt-right ml-4"></i></button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-<div class="row mt-5">
-    <div class="col-md-12 m-0 p-0 h-px-300">
-        <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.3303691647775!2d-43.92962768452321!3d-19.952603986591093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa69834dcf5a14f%3A0xab6e4d3c2ddb0e93!2sRua%20Professor%20Eug%C3%AAnio%20Murilo%20Rubi%C3%A3o%2C%20222%20-%20Anchieta%2C%20Belo%20Horizonte%20-%20MG%2C%2030310-540!5e0!3m2!1spt-BR!2sbr!4v1592083937473!5m2!1spt-BR!2sbr"
-        width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-        tabindex="0"></iframe>
+    <div class="row mt-5">
+        <div class="col-md-12 m-0 p-0 h-px-300">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.3303691647775!2d-43.92962768452321!3d-19.952603986591093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa69834dcf5a14f%3A0xab6e4d3c2ddb0e93!2sRua%20Professor%20Eug%C3%AAnio%20Murilo%20Rubi%C3%A3o%2C%20222%20-%20Anchieta%2C%20Belo%20Horizonte%20-%20MG%2C%2030310-540!5e0!3m2!1spt-BR!2sbr!4v1592083937473!5m2!1spt-BR!2sbr"
+                width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+        </div>
     </div>
-</div>    
 
 </div>
 

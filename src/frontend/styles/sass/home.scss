@@ -1,15 +1,20 @@
 @import "./style.scss";
 
-.collapsed{
+.collapsed {
     top: 0;
     left: 0;
 }
-.fade-slow{
+a.text-black{
+    &:hover{
+        color: black !important;
+    }
+}
+.fade-slow {
     transition-duration: 6s !important;
     transition: ease !important;
     transition-delay: 0.5s !important;
 }
-.areaClose{
+.areaClose {
     position: absolute;
     top: 1vh;
     left: 8px;
@@ -18,10 +23,9 @@
     z-index: 99999;
 }
 
-.imgLogo{
+.imgLogo {
     width: 5%;
 }
-
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
@@ -31,55 +35,50 @@
     height: 350px;
     color: $lifelink-white-color !important;
     border: 1px solid #f1f1f1;
+}
 
-  }
-  
-  /* This container is needed to position the front and back side */
-  .flip-card-inner {
+/* This container is needed to position the front and back side */
+.flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-  }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-  }
-  
-  /* Position the front and back side */
-  .flip-card-front, .flip-card-back {
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
-  }
-  
-  /* Style the front side (fallback if image is missing) */
+}
 
-  
-  /* Style the back side */
-  .flip-card-back {
+/* Style the front side (fallback if image is missing) */
+
+/* Style the back side */
+.flip-card-back {
     transform: rotateY(180deg);
-  }
+}
 
-.centered-item{
+.centered-item {
     padding-top: 165px;
     padding-bottom: 165px;
 }
 
-
-
-.pl-perso{
-    padding-left: 9rem!important;
+.pl-perso {
+    padding-left: 9rem !important;
 }
 
-
-
-.bg-mask{
+.bg-mask {
     position: absolute;
     top: 0;
     left: 0;
@@ -89,131 +88,364 @@
     height: 100%;
 }
 
-.mx-500{
+.mx-500 {
     max-width: 500px;
 }
 
-.bg-3{
+.bg-3 {
     background-color: #ffba00;
 }
 
-#about{
+#about {
     color: white;
-    span{
-        color:#cee4e1;    
+    span {
+        color: #cee4e1;
     }
-    .about{
+    .about {
         text-align: left;
     }
-    .about-with-hr{
+    .about-with-hr {
         padding-top: 4%;
         padding-right: 21%;
     }
-    .hr-about{
+    .hr-about {
         color: white;
-    background-color: white;
-    width: 15%;
+        background-color: white;
+        width: 15%;
     }
-    
 }
 
-#brands{
-    
-    .front{
+#brands {
+    .front {
         color: white;
     }
 }
 
-
-
-.bottom{
+.bottom {
     position: relative;
     bottom: 0;
 }
 
-.userPic{
+.userPic {
     width: 10%;
 }
 
-.client-info-desc{
-}
-.input-news{
+// .client-info-desc {
+// }
+.input-news {
     outline: 0;
     border-radius: 25rem;
     border: 0;
     font-size: 15px;
     letter-spacing: 2px;
 }
+.p-top-absolute-info-viva {
+    position: absolute;
+    color: white;
+    letter-spacing: 2px;
+}
+.p-bottom-absolute-title-viva {
+    color: white;
+    position: absolute;
+}
+.p-top-absolute-info-athene {
+    position: absolute;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.p-bottom-absolute-title-athene {
+    color: #fff;
+    position: absolute;
+}
 
-.little-to-bottom{
+.p-top-absolute-info {
+    position: absolute;
+    top: 20%;
+    left: 24.3%;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.p-bottom-absolute-title {
+    position: absolute;
+    color: white;
+}
+
+.little-to-bottom {
     position: relative;
     top: 38px;
 }
+
 // Contato
-.hr-contact{
+.hr-contact {
     background-color: #040000;
     width: 15%;
     display: inline-flex;
     height: 2px;
 }
-.square-newsletter{
-    width: 100%;
-    position: relative;
-    height: 29.2%;
-}
 
-.bg-mask-grey{
+
+.bg-mask-grey {
     position: absolute;
     top: 0;
     left: 0;
     background: #464646;
-    opacity: .5;
+    opacity: 0.5;
     width: 100%;
     height: 100%;
 }
-.bg-mask-orange{
+.bg-mask-orange {
     position: absolute;
     top: 0;
     left: 0;
-    background: #f80;
-    opacity: .5;
+    background: #fe8800;
+    opacity: 0.7;
     width: 100%;
-    height: 71.6%;
+    height: 71.5%;
 }
-.bg-mask-white{
+.bg-mask-white {
     position: absolute;
-    top: 533px;
     left: 0;
     background: #ffefef;
     opacity: .2;
     width: 100%;
-    height: 28.6%;
+    height: 29%;
 }
-.bg-mask-chumbo{
+.bg-mask-chumbo {
     position: absolute;
     top: 0;
     left: 0;
     background: #636363;
-    opacity: .5;
+    opacity: 0.5;
     width: 100%;
-    height: 72%;
+    height: 71.3%;
 }
-.text-body{
+.text-body {
     max-width: 37%;
 }
-.land{
+.land {
     height: 531px;
 }
-.grampa{
-    height: 531px;
-}
-.row98{
+
+.row98 {
     height: 98.7% !important;
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
 }
-.h-98{
-    height: 98.7% !important;
+.h-99 {
+    height: 99%!important;
+}
+
+@media screen and (max-width: 767px) {
+    .bg-mask-chumbo{
+        height: 51.6%;
+    }
+    .bg-mask-white {
+        top: 50%;
+        height: 50.6%;
+    }
+    .p-top-absolute-info {
+        top: 20%;
+        display: block;
+        width: 100%;
+        left: 0;
+        text-align: center;
+    }
+    .p-top-absolute-info-viva {
+        top: 10%;
+        display: block;
+        width: 100%;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+    .p-bottom-absolute-title-viva {
+        bottom: 53%;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .p-top-absolute-info-athene {
+        display: block;
+        letter-spacing: 2px;
+        width: 100%;
+        text-align: center;
+        top: 56%;
+    }
+    .p-bottom-absolute-title-athene {
+        display: block;
+        width: 100%;
+        text-align: center;
+        bottom: 6%;
+    }
+    .bg-mask-orange {
+        height: 50.2%;
+    }
+    .flip-card {
+        margin: 0 auto;
+    }
+    .p-bottom-absolute-title {
+        bottom: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .input-news {
+        width: 25%;
+    }
+    .padding-on-desktop {
+        padding: 3rem !important;
+    }
+  
+    .p-bottom-absolute-title {
+        position: absolute;
+        bottom: 10%;
+        left: 30%;
+        right: 32%;
+    }
+    .p-top-absolute-info-viva {
+        top: 15%;
+        left: 24.3%;
+    }
+    .p-bottom-absolute-title-viva {
+        bottom: 52%;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .p-top-absolute-info-athene {
+        position: absolute;
+        color: #fff;
+        letter-spacing: 2px;
+        top: 77%;
+        font-size: 6px;
+        max-width: 59px;
+    }
+    .p-bottom-absolute-title-athene {
+        color: #fff;
+        position: absolute;
+        bottom: 1%;
+        font-size: 18px;
+        left: 10%;
+        max-width: 93px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .tablet-width {
+        width: 768px;
+    }
+    .flip-card {
+        width: 153px;
+    }
+    .p-top-absolute-info-athene {
+        top: 62%;
+        left: 23%;
+    }
+    .p-bottom-absolute-title-athene {
+        bottom: 5%;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .bg-mask-white {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        background: #ffefef;
+        opacity: 0.2;
+        width: 100%;
+        height: 100%;
+    }
+    .bg-mask-orange {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1050px) {
+    .flip-card {
+        width: 210px;
+    }
+    .tablet-width {
+        width: 1026px;
+    }
+    .p-bottom-absolute-title-viva {
+        bottom: 41%;
+    }
+    .p-top-absolute-info-viva {
+        font-size: 18px;
+    }
+    .p-top-absolute-info {
+        font-size: 18px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1024px) {
+    .p-top-absolute-info-athene {
+        top: 70%;
+        left: 24.3%;
+        font-size: 18px;
+    }
+    .p-bottom-absolute-title-viva{
+        bottom: 52%;
+        left: -4%;
+    }
+    .p-bottom-absolute-title-athene {
+        bottom: 4%;
+        left: 33%;
+        right: 30%;
+    }
+    .grampa {
+        width: 1024px;
+    }
+    .bg-mask-orange {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+    }
+    .bg-mask-white {
+        top: 50%;
+        height: 100%;
+    }
+    .pro-img-view {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+        .pro-col{
+            flex: 0 0 100%;
+            max-width: 100%;
+            .text-body{
+                margin: 0 auto;
+                padding: 2rem;
+                text-align: center;
+                max-width: 38%;
+            }
+        }
+}
+@media (min-width: 1025px) {
+    .bg-mask-grey{
+        height: 99.8%;
+    }
+    .grampa {
+        height: 531px;
+    }
+    .p-bottom-absolute-title-viva {
+        bottom: 31%;
+        width: 100%;
+        font-size: 16px;
+        left: 7%;
+        max-width: 106px;
+    }
+    .p-top-absolute-info-viva {
+        top: 9%;
+        max-width: 82px;
+        left: -3.3%;
+    }
 }

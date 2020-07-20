@@ -2,119 +2,116 @@
   Classes Auxiliares e etc
 ****************************************/
 
-
 // #region CLASSES AUXILIARES
 // rotate text
-.rotate-text{
-  transform: rotate(270deg);
-}
-
-
-
-
 
 // width
-.w-40{
+.w-40 {
   width: 40%;
 }
-.w-35{
+.w-35 {
   width: 35%;
 }
 //z-index
-.z-index-priority{
- z-index: 9999; 
+.z-index-priority {
+  z-index: 9999;
 }
-  // border
-.rm-border{
+// border
+.rm-border {
   border: none;
 }
-.rm-background{
+.rm-background {
   background-color: #fbfbfb !important;
 }
 // padding
-.pl-6{
+.pl-6 {
   padding-left: 6rem;
 }
-.pt-6px{
+.pt-6px {
   padding-top: 6px;
 }
-.pl-11{
+.pl-11 {
   padding-left: 12rem;
 }
-.h-100{
-  height: 100% ;
+.h-100 {
+  height: 100%;
 }
-.mt-5rem{
+.mt-5rem {
   margin-top: 5rem;
 }
-.max-w-600{
-  max-width: 633px;
+.max-w-600 {
+  max-width: 668px;
 }
-.max-w-80{
+.max-w-80 {
   max-width: 80%;
 }
-.max-600{
- max-width: 600px;
+.max-600 {
+  max-width: 600px;
 }
-.mx-450{
+.mx-450 {
   max-width: 450px;
 }
-.mx-250{
+.mx-250 {
   max-width: 253px;
 }
 
-.pb-6rem{
-  padding-bottom: 8rem!important;
+.pb-6rem {
+  padding-bottom: 8rem !important;
 }
-.pt-6rem{
-  padding-top: 7rem!important;
+.pt-6rem {
+  padding-top: 7rem !important;
 }
-.w-90{
+.w-90 {
   width: 90%;
 }
 // position
 
-.p-absolute{
+.p-absolute {
   position: absolute;
 }
 
 // index
-.z-index-1{
+.z-index-1 {
   z-index: 1;
 }
 
-.w-nowrap{
+.w-nowrap {
   white-space: nowrap;
 }
-
+.footerLink{
+  position: absolute;
+  bottom: 0;
+}
 // font
 .fw-600 {
   font-weight: 600;
 }
-
+.no-opacity{
+  opacity: unset !important;
+  transition: none !important;
+}
 
 // LETTER
-.letter-spacing{
+.letter-spacing {
   letter-spacing: 3px;
-  white-space: nowrap;
- 
+  
 }
-.lowercase{
+.lowercase {
   text-transform: lowercase;
 }
-.uppercase{
+.uppercase {
   text-transform: uppercase;
 }
-.justify-content{
+.justify-content {
   justify-content: center;
 }
-.align-items{
+.align-items {
   align-items: center;
 }
-.letter-spacing-font-size{
+.letter-spacing-font-size {
   font-size: 12px;
 }
-// #endregion 
+// #endregion
 
 // #region NGCLOAK
 [ng\:cloak],
@@ -176,38 +173,37 @@
 // #endregion
 
 // #region BACKGROUNDS
-.bg-1{
+.bg-1 {
   background-color: #ff8800;
- }
- .bg-lightgrey{
+}
+.bg-lightgrey {
   background-color: #fbfbfb;
- }
-.card-bg1{
+}
+.card-bg1 {
   background-color: #729786;
- }
- .card-bg2{
+}
+.card-bg2 {
   background-color: #1d1d1d;
- }
- .card-bg3{
+}
+.card-bg3 {
   background-color: #73c5ce;
- }
- .card-bg4{
+}
+.card-bg4 {
   background-color: #b872c7;
- }
- .card-bg5{
+}
+.card-bg5 {
   background-color: #729786;
- }
- .card-bg6{
+}
+.card-bg6 {
   background-color: #1d1d1d;
- }
- .card-bg7{
+}
+.card-bg7 {
   background-color: #73c5ce;
- }
- .card-bg8{
+}
+.card-bg8 {
   background-color: #b872c7;
- }
+}
 
- 
 // #endregion
 
 // #region  BORDERS
@@ -245,10 +241,20 @@ input {
 
 // #endregion
 
-// #region classes auxiliares em mob 
+// #region classes auxiliares em mob
 @media (max-width: 768px) {
   .mt-51 {
     margin-top: 21.1%;
   }
+}
+@media (max-width: 768px) {
+  .w-nowrap {
+    white-space: pre-wrap !important;
+  }
+}
+@media (min-width: 768px) {
+  .rotate-text {
+    transform: rotate(270deg);
+  }  
 }
 // #endregion

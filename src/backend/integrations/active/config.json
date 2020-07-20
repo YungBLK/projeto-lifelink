@@ -1,0 +1,12 @@
+{
+    "development": {
+        "active": {
+            "token": "31699b7d1ad402ebca1617d7839f5145f9516fe9d6cef72ddb23bb5a7d0d7bc17ccec390"
+        }
+    },
+    "production": {
+        "active": {
+            "token": "31699b7d1ad402ebca1617d7839f5145f9516fe9d6cef72ddb23bb5a7d0d7bc17ccec390"
+        }
+    }
+}

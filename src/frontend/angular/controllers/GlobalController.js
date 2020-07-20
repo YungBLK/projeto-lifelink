@@ -9,4 +9,9 @@ myapp.controller('GlobalController',
             console.log($scope.showCloseAnchor);
         }
 
+        $scope.goTo = (divId) => {
+            $('body, html').animate({ scrollTop: $(divId).offset().top }, 800);
+        };
+
+
     });

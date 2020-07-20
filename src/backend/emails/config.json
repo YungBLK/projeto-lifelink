@@ -1,0 +1,16 @@
+{
+    "development": {
+        "mailer": {
+            "HOST": "smtp.sendgrid.net",
+            "USER": "mariana.mlo",
+            "PASSWORD": "MK12051720"
+        }
+    },
+    "production": {
+        "mailer": {
+            "HOST": "smtp.sendgrid.net",
+            "USER": "mariana.mlo",
+            "PASSWORD": "MK12051720"
+        }
+    }
+}

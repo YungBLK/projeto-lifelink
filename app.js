@@ -21,8 +21,9 @@ app.use(express.static(path.join(__dirname, 'dist')));
 app.locals.site_name = 'Viva - Lifelink';
 app.locals.description = 'Viva - Lifelink';
 
+const apiUserRouter = require('./src/backend/routes/user');
 
-
+app.use('/api/user', apiUserRouter);
 app.use('/', indexRouter);
 
 // Catch error 404

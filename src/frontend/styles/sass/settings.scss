@@ -10,7 +10,7 @@ $lifelink-grey-color: #898989;
 $lifelink-black-color: #3f3f3f;
 $lifelink-white-color: #fbfffc;
 $lifelink-black-secondary-color: #5a5a5a;
-$lifelink-icons-color: #373737; 
+$lifelink-icons-color: #373737;
 $lifelink-hr-color: #353535;
 $lifelink-purple-secondary-color: #7a6369;
 $lifelink-white-color: #fbfffc;
@@ -32,78 +32,78 @@ $lifelink-black-dark-color: #000;
 // #region FONTES
 @font-face {
   font-family: "";
-  src: url("/fonts/Lato/Lato-Semibold.ttf")
-  }
+  src: url("/fonts/Lato/Lato-Semibold.ttf");
+}
 
-  @font-face {
-    font-family: "latosemibold";
-    src: url("/fonts/Lato/Lato-Semibold.ttf");
-    font-weight: normal;
-    font-style: normal;
-  }
-  $font-semi-bold: "latosemibold";
-  
-  @font-face {
-    font-family: "latoregular";
-    src: url("/fonts/Lato/Lato-Regular.ttf");
-    font-weight: normal;
-    font-style: normal;
-  }
-  $font-regular: "latoregular";
-  
-  @font-face {
-    font-family: "latoblack";
-    src: url("/fonts/Lato/Lato-Black.ttf");
-    font-weight: normal;
-    font-style: normal;
-  }
-  $font-black: "latoblack";
+@font-face {
+  font-family: "latosemibold";
+  src: url("/fonts/Lato/Lato-Semibold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+$font-semi-bold: "latosemibold";
 
-  @font-face {
-    font-family: "latomedium";
-    src: url("/fonts/lato-font/fonts/lato-medium/lato-medium.woff") format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
-  $font-medium: "latomedium";
+@font-face {
+  font-family: "latoregular";
+  src: url("/fonts/Lato/Lato-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+$font-regular: "latoregular";
 
-   @font-face {
-     font-family: "latoblackitalic";
-     src: url("/fonts/lato-font/fonts/lato-black-italic/lato-black-italic.woff") format('woff');
-     font-weight: bold;
-     font-style: italic;
-   }
+@font-face {
+  font-family: "latoblack";
+  src: url("/fonts/Lato/Lato-Black.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+$font-black: "latoblack";
 
-   $font-black-italic: "latoblackitalic";
-  
-  // @font-face {
-  //   font-family: "robotoregular";
-  //   src: url("/fonts/Roboto/Roboto-Regular.woff") format("woff");
-  //   font-weight: normal;
-  //   font-style: normal;
-  // }
-  // $font-roboto-regular: "robotoregular";
-  
-  // @font-face {
-  //   font-family: "myriadprolight";
-  //   src: url("/fonts/MyriadPro/MyriadPro-Light.woff") format("woff");
-  //   font-weight: normal;
-  //   font-style: normal;
-  // }
-  // $font-light: "myriadprolight";
-  
-  // @font-face {
-  //   font-family: "myriadprobold";
-  //   src: url("/fonts/MyriadPro/MYRIADPRO-BOLD.woff") format("woff");
-  //   font-weight: normal;
-  //   font-style: normal;
-  // }
-  // $font-bold: "myriadprobold";
-  
-  // .font-family-arial {
-  //   font-family: Arial, Helvetica, sans-serif;
-  // }
-  
+@font-face {
+  font-family: "latomedium";
+  src: url("/fonts/lato-font/fonts/lato-medium/lato-medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+$font-medium: "latomedium";
+
+@font-face {
+  font-family: "latoblackitalic";
+  src: url("/fonts/lato-font/fonts/lato-black-italic/lato-black-italic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+$font-black-italic: "latoblackitalic";
+
+// @font-face {
+//   font-family: "robotoregular";
+//   src: url("/fonts/Roboto/Roboto-Regular.woff") format("woff");
+//   font-weight: normal;
+//   font-style: normal;
+// }
+// $font-roboto-regular: "robotoregular";
+
+// @font-face {
+//   font-family: "myriadprolight";
+//   src: url("/fonts/MyriadPro/MyriadPro-Light.woff") format("woff");
+//   font-weight: normal;
+//   font-style: normal;
+// }
+// $font-light: "myriadprolight";
+
+// @font-face {
+//   font-family: "myriadprobold";
+//   src: url("/fonts/MyriadPro/MYRIADPRO-BOLD.woff") format("woff");
+//   font-weight: normal;
+//   font-style: normal;
+// }
+// $font-bold: "myriadprobold";
+
+// .font-family-arial {
+//   font-family: Arial, Helvetica, sans-serif;
+// }
+
 @import "../../../../dist/fonts/FontAwesome/scss/brands.scss";
 @import "../../../../dist/fonts/FontAwesome/scss/solid.scss";
 @import "../../../../dist/fonts/FontAwesome/scss/regular.scss";
@@ -169,3 +169,16 @@ body {
   scrollbar-shadow-color: #c0c0c0;
 }
 // #endregion
+
+
+// FLASH
+
+.flash{
+  background-color: $lifelink-orange-color;
+}
+
+textarea.input-border-bottom, input.input-border-bottom {
+  &:focus{
+    outline: white auto 0.5px ;
+  }
+}

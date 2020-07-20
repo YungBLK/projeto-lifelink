@@ -33,6 +33,7 @@ function concatJS() {
     'bower_components/jquery/dist/jquery.min.js',
     
     'bower_components/angular/angular.min.js',
+    'bower_components/angular-flash-alert/dist/angular-flash.min.js',
     'bower_components/bootstrap/dist/js/bootstrap.bundle.min.js',
     'bower_components/bootstrap/js/dist/util.js',
     'bower_components/popper.js/dist/umd/popper.min.js',

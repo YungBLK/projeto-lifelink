@@ -36,3 +36,10 @@
   ::-ms-input-placeholder { /* Microsoft Edge */
     color: white;
   }
+
+
+  @media screen and (max-width: 767px){
+      .bg-gradient{
+        background: linear-gradient(to bottom, #fff 0,#fff 45%,#fd9824 44%,#fba747 100%);
+      }
+  }

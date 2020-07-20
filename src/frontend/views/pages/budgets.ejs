@@ -5,10 +5,12 @@
     <div class="container p-0">
         <h1 class="orange-title font-weight-bold _ts9 font-italic budgets-title">Nossos valores</h1>
         <div id="" class="">
-            <p class="mx-950 grey-secondary-text">Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-                interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna, condimentum a vehicula hendrerit
-                ac nisiendrerit ac nisi Lorem ipsum dolor sit amet. Tristique. Duis lacus urna, condimentum a vehicula
-                a, hendrerit ac nisi Lorem ipsum dolor sit.</p>
+            <p class="mx-950 grey-secondary-text">Nosso comprometimento é com atendimento de qualidade, ágil e eficaz
+                para a sua tranquilidade e para a segurança do seu cliente.
+
+                Sabemos que o seu negócio tem detalhes específicos que o tornam especial, portanto, a cotação abaixo
+                será uma base para sua análise. Para maior personalização, entre em contato conosco!
+            </p>
             <p class="mx-950 grey-secondary-text">Class aptent taciti sociosqu ad litora torquent per conubia nostra,
                 interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna, condimentum a vehicula hendrerit
                 ac nisi</p>
@@ -20,111 +22,141 @@
 <div class="container">
 
     <div class="row pt-4">
-        <div class="col-md-2 pl-0">
-            <button class="btn btn-dark btn-budgets p-2 mt-3 letter-spacing-b w-100">Serviço</button>
+        <div class="col-md-2 pl-button">
+            <button class="btn btn-dark btn-budgets p-2 mt-3 letter-spacing-b w-100">PERS</button>
         </div>
 
         <div class="col-md-2 ">
-            <button class="btn btn-dark btn-budgets p-2 mt-3 letter-spacing-b w-100">Serviço</button>
+            <button class="btn btn-dark btn-budgets p-2 mt-3 letter-spacing-b w-100">Segurança</button>
         </div>
 
         <div class="col-md-2 ">
-            <button class="btn btn-dark btn-budgets p-2 mt-3 letter-spacing-b w-100">Serviço</button>
+            <button class="btn btn-dark btn-budgets p-2 mt-3 letter-spacing-b w-100">IoT</button>
         </div>
     </div>
-    <div class="row pt-5">
+    <div class="row pt-5 p-mobile">
         <div class="col-md-8">
             <form>
                 <div class="row pb-4">
                     <div class="col-md-2 p-0">
-                        <label>Variavel 01</label>
+                        <label>Número de usuários</label>
                     </div>
-                    <div class="col-md-10">
-                        <input class="w-100" type="range">
+                    <div class="col-md-10 d-flex align-items-center justify-content-center">
+
+                        <input ng-model="bugde.userNumber"
+                            ng-change="calcAlarmFactor(bugde.eventsNumber, bugde.userNumber)" list="tickmarks" min="10"
+                            max="100" class="w-90 inputRange" type="range">
+                        <datalist id="tickmarks">
+                            <option value="0">
+                            <option value="10">
+                            <option value="20">
+                            <option value="30">
+                            <option value="40">
+                            <option value="50">
+                            <option value="60">
+                            <option value="70">
+                            <option value="80">
+                            <option value="90">
+                            <option value="100">
+                        </datalist>
+                        <span class="pl-3">{{ bugde.userNumber }}</span>
+
+                    </div>
+                </div>
+                <div class="row pb-4">
+                    <div class="col-md-2 p-0 ">
+                        <label>Número de eventos por mês</label>
+                    </div>
+                    <div class="col-md-10  d-flex align-items-center justify-content-center">
+                        <input class="w-75 inputRange" min="10" max="100" list="tickmarks"
+                            ng-change="calcAlarmFactor(bugde.eventsNumber, bugde.userNumber)"
+                            ng-model="bugde.eventsNumber" type="range">
+                        <datalist id="tickmarks">
+                            <option value="0">
+                            <option value="10">
+                            <option value="20">
+                            <option value="30">
+                            <option value="40">
+                            <option value="50">
+                            <option value="60">
+                            <option value="70">
+                            <option value="80">
+                            <option value="90">
+                            <option value="100">
+                        </datalist>
+                        <span class="pl-3" ng-bind="bugde.eventsNumber"></span>
+                        <label class="pl-3">Usar média ?
+                            <input class="w-100" ng-model="bugde.useAverage" type="checkbox">
+                        </label>
                     </div>
                 </div>
                 <div class="row pb-4">
                     <div class="col-md-2 p-0">
-                        <label>Variavel 02</label>
+                        <label>Adicionais</label>
                     </div>
                     <div class="col-md-10">
-                        <input class="w-100" type="range">
-                    </div>
-                </div>
-                <div class="row pb-4">
-                    <div class="col-md-2 p-0">
-                        <label>Variavel 03</label>
-                    </div>
-                    <div class="col-md-10">
-                        <input class="w-100" type="range">
+                        <input class="ml-2" type="checkbox" ng-model="bugde.additional" checked>
+                        <span>OEM</span>
                     </div>
                 </div>
             </form>
             <div class="row">
                 <div class="col-md-3 p-0 pr-3">
-                    <h5>Variável</h5>
-                    <p class="_ts1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut
-                        labore
-                        et
-                        dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-                        accumsan
-                        lacus vel facilisis.</p>
+                    <h5 class="font-weight-bold">Número de usuários</h5>
+                    <p class="_ts1">Quantos usuários ou dispositivos sua empresa tem? Se você está iniciando um novo
+                        empreendimento, considere quantos você terá em 3 meses.</p>
                 </div>
                 <div class="col-md-3 p-0 pr-3">
-                    <h5>Variável</h5>
-                    <p class="_ts1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut
-                        labore
-                        et
-                        dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-                        accumsan
-                        lacus vel facilisis.</p>
+                    <h5 class="font-weight-bold">Número de eventos por mês</h5>
+                    <p class="_ts1">O número de eventos que você produz em um mês está diretamente relacionado ao valor
+                        cobrado por conta. </p>
                 </div>
                 <div class="col-md-3 p-0 pr-3">
-                    <h5>Variável</h5>
-                    <p class="_ts1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut
-                        labore
-                        et
-                        dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-                        accumsan
-                        lacus vel facilisis.</p>
+                    <h5 class="font-weight-bold">Adicionais</h5>
+                    <h6>OEM</h6>
+                    <p class="_ts1">Quando os seus clientes acionarem a Central, iremos atender com o nome da sua
+                        empresa.</p>
                 </div>
-                <div class="col-md-3 p-0 pr-3">
-                    <h5>Variável</h5>
-                    <p class="_ts1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut
-                        labore
-                        et
-                        dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-                        accumsan
-                        lacus vel facilisis.</p>
+                <div class="col-md-3 p-0 pr-3 text-muted">
+                    <h5 class="font-weight-bold">Adicionais</h5>
+                    <h6>Injeção de ID na ligação (em breve)</h6>
+                    <p class="_ts1">Quando os seus clientes receberem uma ligação da Central, irão visualizar o número
+                        da sua empresa.</p>
                 </div>
 
             </div>
         </div>
         <div class="col-md-4">
-            <div class="card bg-lightgrey rm-border" style="width: 22rem;" >
+            <div class="card bg-lightgrey rm-border">
                 <div class="card-header rm-background text-center">
-                    <h4 class="orange-title font-weight-bold">Valor estimado</h4>
+                    <h4 class="orange-title font-weight-bold">Valor estimado <i data-toggle="tooltip"
+                            data-placement="top"
+                            title="Nós estimamos o seu custo baseado nas opções selecionadas. Este valor poderá alterar depois de coletarmos mais informações com um de nossos consultores especialistas."
+                            class="fas pl-3  fa-comment-dots"></i></h4>
                 </div>
                 <div class="card-body text-left">
                     <p class="card-title font-weight-bold ">Serviço</p>
                     <div>
-                        <p class="card-text _ts1">Cum socilis natoque</p>
-                        <p class="card-text _ts1">Habitant morbi tristique</p>
-                        <p class="card-text _ts1">Aenean ultrices</p>
+                        <p class="card-text _ts1" ng-bind="'Fator Alarme: ' + alarmFactor"></p>
+                        <p class="card-text _ts1" ng-show="bugde.additional">OEM</p>
+                        <!-- <p class="card-text _ts1">Aenean ultrices</p> -->
                     </div>
                     <div class="pt-4 pb-2">
                         <hr class="m-0">
-                        <p class="card-text m-0 mt-2 d-flex justify-content-between font-weight-bold">Preço por usuário <span class="_ts4 orange-title text-right">R$ 50.00</span></p>
+                        <p class="card-text m-0 mt-2 d-flex justify-content-between font-weight-bold">Preço por usuário
+                            <span class="_ts4 orange-title text-right" ng-bind="'R$' + userPrice"></span></p>
                         <hr class="m-0">
-                        <p class="card-text m-0 mt-2 d-flex justify-content-between font-weight-bold">Preço mensal <span class="_ts4 orange-title text-right">R$ 1050.00</span></p>
+                        <p class="card-text m-0 mt-2 d-flex justify-content-between font-weight-bold">Preço mensal <span
+                                class="_ts4 orange-title text-right" ng-bind="'R$' + monthPrice"></span></p>
                         <hr class="m-0">
                     </div>
                     <div class="card-footer rm-background pt-3 rm-border">
-                        <a href="#" class="btn btn-orange py-2 font-weight-bold text-white w-100">Falar com um consultor</a>
+                        <a href="#" class="btn btn-orange py-2 font-weight-bold text-white w-100">Falar com um
+                            consultor</a>
+                        <div class="text-center">
+                            <i class="mt-2 orange-title _ts3 far fa-save" data-toggle="tooltip" data-placement="top"
+                                title="Guardar cotação"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -141,15 +173,16 @@
         <div class="container pl-11">
             <div id="staytuned" class="text-left pr-5 pb-10rem pt-4rem">
                 <h1 class="font-black font-weight-bold">Ainda em dúvida?</h1>
-                <p class="text-left lato-medium max-w-text white-secondary-text"> Suspendisse faucibus sed dolor eget
-                    posuere interdum urna.
-                    ante commodo tristique. consectetur adipiscing commodo tristique Vestibulum imperdiet nibh vel
-                    magdolor
-                    eget posuere interdum urna.</p>
-                <p class="text-left lato-medium max-w-text white-secondary-text">Vante commodo tristique. consectetur
-                    adipiscing commodo
-                    tristiquea lacinia ultrices.</p>
-                <button class="btn btn-light p-2 mt-3 letter-spacing-b">ENTRAR EM CONTATO</button>
+                <p class="text-left lato-medium max-w-text white-secondary-text"> Tem alguma dúvida ou sugestão? Envie
+                    para nós no formulário ao ou através dos meios listados abaixo.</p>
+                <p class="text-left lato-medium max-w-text white-secondary-text">contato@lifelink
+                    <a class="text-white" href="https://www.facebook.com/www.lifelink.com.br/">Facebook</a>, <a
+                        class="text-white"
+                        href="https://www.instagram.com/explore/locations/500436543356938/lifelink-monitoramento-ltda/?hl=pt-br">Instagram</a>,
+                    <a class="text-white" href="https://www.linkedin.com/company/lifelink-monitoramento/">LinkedIn.</a>
+                </p>
+                <a class="btn btn-light p-2 mt-3 letter-spacing-b" href="/contato">ENTRAR EM
+                    CONTATO</a>
             </div>
         </div>
     </div>

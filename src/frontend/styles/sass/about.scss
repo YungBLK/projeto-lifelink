@@ -41,7 +41,7 @@
   padding-left: 1.65rem!important;
 }
 .pl-s{
-  padding-right: 19rem!important;
+  padding-right: 19rem ;
 }
 .point{
   width: 8px;
@@ -99,13 +99,13 @@
     width: 65px;
     height: 26px;
     border-radius: 50px;
-    top: 48.9%;
+    top: 41.9%;
     
   }
   
   .year2{
     position: absolute;
-    top: 49.1%;
+    top: 42.1%;
     z-index: 3;
     right: 48.2%;
     font-size: 17px;
@@ -331,32 +331,12 @@ body {
       }
       .r-event {
         .event-body {
-          &:after {
-            content: '';
-            position: absolute;
-            top: 0;
-            width: 6px;
-            height: 100%;
-            background-color: $light-blue;
-            left: -30%;
-            border-radius: 3px;
-            box-shadow: 1px 1px 1px #fff
-          }
+         
         }
       }
       .l-event {
         .event-body {
-          &:after {
-            content: '';
-            position: absolute;
-            top: 0;
-            width: 6px;
-            height: 100%;
-            background-color: $light-blue;
-            right: -30%;
-            border-radius: 3px;
-            
-          }
+      
         }
       }
     }
@@ -542,23 +522,7 @@ body {
     }
 }
 
-  .year-of-xp{
-    width: 70%;
-    display: flex;
-    min-height: 59%;
-    justify-content: flex-end;
-    margin-top: 57%;
-    flex-direction: column;
-    text-align: left;
-    padding-left: 7%;
-    margin-bottom: 2%;
-    padding-bottom: 10%;
-    .year-of-xp-title{
-      .big-number{
-          font-size: 6.58318rem;
-      }
-    }
-  }
+
   .profilePreviewControlNext{
     width: 100%;
     height: 26%;
@@ -567,10 +531,7 @@ body {
     width: 100%;
     height: 15%;
   }
-  .no-opacity{
-    opacity: unset !important;
-    transition: none !important;
-  }
+  
   .col6Padding{
     padding: 4% !important;
   }
@@ -612,4 +573,106 @@ body {
   }
     
   }
+}
+
+@media (max-width: 767px){
+
+  .row-mb{
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+  }
+  .border-the-lifelink-way{
+    display: none !important;
+  }
+  .top-container{
+    padding-left: 0 !important;
+    margin-top: 0 !important;
+    position: initial !important;
+  }
+  .carrousel-indicators-default{
+    display: none !important;
+  }
+  .carousel-control-next{
+    display: none !important;
+  }
+  .pl-s{
+    padding-right: 0 !important;
+  }
+  .col6Padding {
+    padding: 9%!important
+  }
+  .blue-event-r{
+    &:before,&:after {
+      display: none !important;
+    }
+    &:after {
+      display: none !important;
+    }
+  }
+
+  .blue-event-l{
+    &:before,&:after {
+      display: none !important;
+    }
+    &:after {
+      display: none !important;
+    }
+  }
+  
+  
+  .green-event-l{
+    &:before,&:after {
+      display: none !important;
+    }
+    &:after {
+      display: none !important;
+    }
+  }
+
+  .green-event-r{
+    &:before,&:after {
+      display: none !important;
+    }
+    &:after {
+      display: none !important;
+    }
+  }
+  
+  .red-event-r{
+    &:before,&:after {
+      display: none !important;
+    }
+    &:after {
+      display: none !important;
+    }
+  }
+
+  .red-event-l{
+    &:before,&:after {
+      display: none !important;
+    }
+    &:after {
+      display: none !important;
+    }
+}
+.event-body {
+  &:before {
+    display: none !important;
+  }
+}
+.year-div{
+  display: none !important;
+  .year2{
+    display: none !important;
+  }
+}
+.year-div::after{
+
+  display: none !important;
+}
+.timeline-top {
+  display: none !important;
+}
+
+
 }
